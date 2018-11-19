@@ -21,7 +21,7 @@
 <meta property="og:image" content="http://www.ydcoding.cn/images/miniprogram/page.png">
 <meta property="og:image" content="http://www.ydcoding.cn/images/miniprogram/init.png">
 <meta property="og:image" content="http://www.ydcoding.cn/images/miniprogram/life.png">
-<meta property="og:updated_time" content="2018-11-18T14:04:01.880Z">
+<meta property="og:updated_time" content="2018-11-19T11:37:07.731Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="小程序开发学习">
 <meta name="twitter:description" content="小程序的结构工程结构">
@@ -220,6 +220,7 @@
 <p>而appInstance.courseName变量在全局app.js中定义为”小程序实战”,so最后页面显示为：”小程序实战”,而非”这是一个test页面”。</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//app.js</span></span><br><span class="line">App(&#123;</span><br><span class="line">  onLaunch: <span class="function"><span class="keyword">function</span> (<span class="params">options</span>) </span>&#123;</span><br><span class="line">    <span class="comment">// Do something initial when launch.</span></span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"触发onLaunch"</span>)</span><br><span class="line">  &#125;,</span><br><span class="line">  onShow: <span class="function"><span class="keyword">function</span> (<span class="params">options</span>) </span>&#123;</span><br><span class="line">    <span class="comment">// Do something when show.</span></span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"触发onShow"</span>)</span><br><span class="line">  &#125;,</span><br><span class="line">  onHide: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="comment">// Do something when hide.</span></span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"触发onHide"</span>)</span><br><span class="line">  &#125;,</span><br><span class="line">  onError: <span class="function"><span class="keyword">function</span> (<span class="params">msg</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(msg)</span><br><span class="line">  &#125;,</span><br><span class="line">  globalData: <span class="string">'I am global data'</span>,</span><br><span class="line">  courseName: <span class="string">'小程序实战'</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
 <p><img src="http://www.ydcoding.cn/images/miniprogram/life.png" alt="avatar"></p>
+<h5 id="js调试"><a href="#js调试" class="headerlink" title="js调试"></a>js调试</h5><p>在需要调试的地方打上debugger;f10单步调试，f8跳过当前断点，进入下一断点</p>
 
       
 
@@ -324,9 +325,18 @@
   
 <nav id="article-nav">
   
+    <a href="/2018/11/18/http&servlet/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          http&amp;servlet
+        
+      </div>
+    </a>
   
-    <a href="/2018/11/18/http&servlet/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">http&amp;servlet</div>
+  
+    <a href="/2018/11/16/hero'Blog/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">hero&#39;Blog</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -463,7 +473,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">小程序</a>
+                <a href="javascript:void(0)" class="js-tag color5">blog</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -471,7 +481,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">blog</a>
+                <a href="javascript:void(0)" class="js-tag color4">小程序</a>
               </li>
             
             <div class="clearfix"></div>
