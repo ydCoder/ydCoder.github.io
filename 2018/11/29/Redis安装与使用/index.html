@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Redis安装与使用 | Be your own hero</title>
+  <title>redis安装与使用 | Be your own hero</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="1.下载好对应的操作系统redis的版本，这里系统为CentOS7，下载地址：https://redis.io/download，选择的版本为redis-4.0.9 2.上传至服务器 3.解压redis安装包 1234567tar -zxvf redis-4.0.9.tar.gz//设置redis以支持远程登录cd  redis-4.0.9vi redis.conf/*将bind 127.0.0.">
 <meta name="keywords" content="redis">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Redis安装与使用">
-<meta property="og:url" content="http://yoursite.com/2018/11/29/Redis安装与使用/index.html">
+<meta property="og:title" content="redis安装与使用">
+<meta property="og:url" content="http://yoursite.com/2018/11/29/redis安装与使用/index.html">
 <meta property="og:site_name" content="Be your own hero">
 <meta property="og:description" content="1.下载好对应的操作系统redis的版本，这里系统为CentOS7，下载地址：https://redis.io/download，选择的版本为redis-4.0.9 2.上传至服务器 3.解压redis安装包 1234567tar -zxvf redis-4.0.9.tar.gz//设置redis以支持远程登录cd  redis-4.0.9vi redis.conf/*将bind 127.0.0.">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-11-29T01:59:47.972Z">
+<meta property="og:updated_time" content="2018-11-30T05:21:14.636Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Redis安装与使用">
+<meta name="twitter:title" content="redis安装与使用">
 <meta name="twitter:description" content="1.下载好对应的操作系统redis的版本，这里系统为CentOS7，下载地址：https://redis.io/download，选择的版本为redis-4.0.9 2.上传至服务器 3.解压redis安装包 1234567tar -zxvf redis-4.0.9.tar.gz//设置redis以支持远程登录cd  redis-4.0.9vi redis.conf/*将bind 127.0.0.">
   
     <link rel="alternative" href="/atom.xml" title="Be your own hero" type="application/atom+xml">
@@ -165,19 +165,19 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Redis安装与使用" class="article article-type-post " itemscope="" itemprop="blogPost">
+            <article id="post-redis安装与使用" class="article article-type-post " itemscope="" itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Redis安装与使用
+      redis安装与使用
     </h1>
   
 
         
-        <a href="/2018/11/29/Redis安装与使用/" class="archive-article-date">
+        <a href="/2018/11/29/redis安装与使用/" class="archive-article-date">
   	<time datetime="2018-11-29T13:39:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-11-29</time>
 </a>
         
@@ -203,6 +203,8 @@
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">tar -zxvf redis-<span class="number">4.0</span>.9.tar.gz</span><br><span class="line"><span class="comment">//设置redis以支持远程登录</span></span><br><span class="line">cd  redis-<span class="number">4.0</span>.9</span><br><span class="line">vi redis.conf</span><br><span class="line"><span class="comment">/*将bind 127.0.0.1这句话用井号注释掉，这样就能支持远程连接了,同时在服务器上的端口号6379也要允许访问</span></span><br><span class="line"><span class="comment">此外，还需要给redis.conf添加配置以支持redis作为守护进程一直跑在后台</span></span><br><span class="line"><span class="comment">需要加入『daemonize yes』*/</span></span><br></pre></td></tr></table></figure>
 <p> 4.安装redis</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">mv redis-<span class="number">4.0</span>.9 redis <span class="comment">// 重命名redis</span></span><br><span class="line">cd redis<span class="comment">//进入到redis目录下</span></span><br><span class="line">make<span class="comment">//编译安装</span></span><br><span class="line">cd src<span class="comment">//进入到src目录下</span></span><br><span class="line">redis-server<span class="comment">//启动redis</span></span><br><span class="line"><span class="comment">//在另一终端的src目录下 </span></span><br><span class="line">redis-cli <span class="comment">//ping  会有pong的回应，说明redis安装成功</span></span><br></pre></td></tr></table></figure>
+<p> 注意：由于需要在redis-desktop-manager工具远程测试redis安装需要给redis设置密码，需要先运行redis服务端，然后再运行客户端使用命令</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">config set requirepass redis  <span class="comment">//redis为你需要设置的密码</span></span><br></pre></td></tr></table></figure>
 
       
 
@@ -293,7 +295,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/11/29/Redis安装与使用/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/11/29/redis安装与使用/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -308,8 +310,8 @@
 <nav id="article-nav">
   
   
-    <a href="/2018/11/29/Redis安装/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Redis安装与使用</div>
+    <a href="/2018/11/18/http&servlet/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">http&amp;servlet</div>
       <i class="icon-circle-right"></i>
     </a>
   
